@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- 字环与打字机来自 Celestial Wheel（zaoxu001，MIT），许可全文见 /LICENSE 与 vendor/three/LICENSE。 -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#050505" />
+<title>Zoya Huo Zoya Huo</title>
+<meta name="description" content="" />
+<link rel="stylesheet" href="./vendor/fonts/fonts.css" />
+<link rel="stylesheet" href="./src/style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/build/three.module.js",
+    "three/addons/": "./vendor/three/addons/"
+  }
+}
+</script>
+</head>
+<body data-page="home">
+<a class="skip" id="skip" href="#/about"></a>
+
+<div id="wheel" aria-hidden="true"></div>
+<div class="mega" aria-hidden="true"><span id="mega-zh"></span></div>
+<pre id="code" aria-hidden="true"></pre>
+
+<header class="header">
+  <a class="brand" href="#/" aria-label="Home"><span class="seal" id="seal"></span><span id="brand-name"></span></a>
+  <nav id="nav"></nav>
+  <div class="hright">
+    <div class="now" id="now"></div>
+    <div class="lang" id="lang" role="group"></div>
+  </div>
+</header>
+
+<main>
+  <section class="page active" id="page-home" data-route="home">
+    <div class="hero-copy">
+      <div class="location"><i></i><span id="loc"></span></div>
+      <p class="intro" id="greeting"></p>
+      <h1 id="slogan"></h1>
+      <p class="hero-description" id="lead"></p>
+      <div class="hero-links"><a class="primary-link" id="cta" href="#/research"></a><a class="quiet-link" id="cta2" href="#/about"></a></div>
+      <div class="identity"><span id="role"></span><span class="identity-dot">/</span><span id="org"></span></div>
+    </div>
+    <div class="hero-bottom">
+      <div class="mid"><span class="tiny-diamond">◇</span><span id="caption"></span><button id="explore"></button></div>
+      <a class="next" id="next-home" href="#/about"></a>
+    </div>
+  </section>
+
+  <section class="page" id="page-about" data-route="about"><div class="page-inner">
+    <div class="section-title"><span class="section-glyph" id="about-glyph"></span><div><p id="about-eyebrow"></p><h2 id="about-title"></h2></div></div>
+    <div class="prose" id="about-text"></div>
+    <div class="icon-links" id="about-links"></div>
+    <div class="sub" id="sub-timeline"></div>
+    <ol class="timeline" id="timeline"></ol>
+    <div class="interests" id="interests"></div>
+    <div class="sub" id="sub-why"></div>
+    <div class="why" id="why"></div>
+    <nav class="pager" data-pager></nav>
+  </div></section>
+
+  <section class="page" id="page-research" data-route="research"><div class="page-inner">
+    <div class="section-title"><span class="section-glyph" id="research-glyph"></span><div><p id="research-eyebrow"></p><h2 id="research-title"></h2></div></div>
+    <div class="research-fig" id="research-figure"></div>
+    <div class="sub" id="sub-projects"></div>
+    <div class="cards" id="project-cards"></div>
+    <div class="sub" id="sub-details"></div>
+    <div class="research-list" id="research-list"></div>
+    <nav class="pager" data-pager></nav>
+  </div></section>
+
+  <section class="page" id="page-contact" data-route="contact"><div class="page-inner">
+    <div class="section-title"><span class="section-glyph" id="contact-glyph"></span><div><p id="contact-eyebrow"></p><h2 id="contact-title"></h2></div></div>
+    <p class="muted" id="contact-lead" style="line-height:2"></p>
+    <div id="contact-body"></div>
+    <nav class="pager" data-pager></nav>
+  </div></section>
+</main>
+
+<div id="tip" role="status" aria-live="polite"></div>
+
+<dialog id="explore-dialog">
+  <div class="dialog-head"><h2 id="dlg-title"></h2><button data-close aria-label="×">×</button></div>
+  <p class="muted" id="dlg-hint"></p>
+  <p class="explore-label" id="dlg-gan"></p><div id="gan-options" class="glyph-options"></div>
+  <p class="explore-label" id="dlg-zhi"></p><div id="zhi-options" class="glyph-options"></div>
+  <div id="glyph-detail" aria-live="polite"></div>
+</dialog>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
