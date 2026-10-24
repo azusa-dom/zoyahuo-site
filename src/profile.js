@@ -1,5 +1,5 @@
 // 个人信息与三语文案（中 / 英 / 日）集中放在这里，页面上所有文字都从这个文件来。
-// 改文字：直接改下面对应语言的内容。改完运行 tools/make-font.py 更新字体子集，再 tools/deploy.sh 发布。
+// 改文字：直接改下面对应语言的内容。改完运行 tools/make-font.py 更新字体子集，再推送到 main 发布（见 README）。
 // links 里留空字符串的项不会显示。
 
 export const PROFILE = {
@@ -45,7 +45,7 @@ export const T = {
       research: { glyph: '乙', eyebrow: 'Research', title: '心脏运动与区域应变', projects: '在做的项目', details: '详细说明', q: '问题', how: '做法' },
       contact: { glyph: '丙', eyebrow: 'Contact', title: '联系', lead: '欢迎就心脏影像、应变测量、医学影像 AI 或全栈开发交流。', none: '联系方式待添加。', copy: '复制邮箱', copied: '已复制', copyFail: '请手动选中复制', gmail: 'Gmail 写信', outlook: 'Outlook 写信', mail: '用邮件 App 打开', hint: '点了没反应？多半是电脑上没配邮件 App。复制邮箱，或用网页版写信。', subject: '来自个人主页的留言' },
     },
-    figure: { src: '/img/fig1-cine-to-strain.webp', alt: '由常规 cine CMR 到区域应变主张的流程示意', caption: '图 1\u3000由常规 cine CMR 到区域应变主张。影像只给出观测；点与点的对应由估计器推断；应变值再取决于测量定义。验证要对准所要支持的具体主张。这是综述中提出的评估框架，不是实验结果，综述仍在撰写，尚未发表。短轴 cine 图像取自 Data Science Bowl Cardiac Challenge Data（Kaggle，2015，训练病例 233），仅作图示。' },
+    figure: { src: 'img/fig1-cine-to-strain.webp', alt: '由常规 cine CMR 到区域应变主张的流程示意', caption: '图 1\u3000由常规 cine CMR 到区域应变主张。影像只给出观测；点与点的对应由估计器推断；应变值再取决于测量定义。验证要对准所要支持的具体主张。这是综述中提出的评估框架，不是实验结果，综述仍在撰写，尚未发表。短轴 cine 图像取自 Data Science Bowl Cardiac Challenge Data（Kaggle，2015，训练病例 233），仅作图示。' },
     about: [
       '我在曼彻斯特大学读博士（AI4BioImaging），研究 cine 心脏磁共振的心肌运动估计与区域应变测量。',
       '本科在澳门科技大学读市场营销，毕业论文是一个 2×2 因子实验，研究区块链可追溯性如何影响奢侈品购买意愿，位列商学院前 5%。期间在百度实习，用 Python 与 Selenium 写自动化脚本。',
@@ -124,7 +124,7 @@ export const T = {
       research: { glyph: '乙', eyebrow: 'Research', title: 'Cardiac motion and regional strain', projects: 'Projects', details: 'Details', q: 'Question', how: 'Approach' },
       contact: { glyph: '丙', eyebrow: 'Contact', title: 'Get in touch', lead: 'I am glad to talk about cardiac imaging, strain measurement, medical imaging AI or full-stack development.', none: 'Contact details to be added.', copy: 'Copy email', copied: 'Copied', copyFail: 'Select and copy manually', gmail: 'Write in Gmail', outlook: 'Write in Outlook', mail: 'Open mail app', hint: 'Nothing happens on click? You probably have no mail app set up. Copy the address, or write from webmail.', subject: 'Hello from your website' },
     },
-    figure: { src: '/img/fig1-cine-to-strain.webp', alt: 'Schematic of the path from routine cine CMR to a regional strain claim', caption: 'Figure 1. From routine cine CMR to a regional strain claim. The image supplies observations; the point-to-point correspondence is inferred by an estimator; the strain value then depends on the measurement definition. Validation has to match the specific claim being made. This is the evaluation framework proposed in my review, not an experimental result; the review is still being written and is unpublished. Short-axis cine frames are from the Data Science Bowl Cardiac Challenge Data (Kaggle, 2015, training case 233) and are shown for illustration only.' },
+    figure: { src: 'img/fig1-cine-to-strain.webp', alt: 'Schematic of the path from routine cine CMR to a regional strain claim', caption: 'Figure 1. From routine cine CMR to a regional strain claim. The image supplies observations; the point-to-point correspondence is inferred by an estimator; the strain value then depends on the measurement definition. Validation has to match the specific claim being made. This is the evaluation framework proposed in my review, not an experimental result; the review is still being written and is unpublished. Short-axis cine frames are from the Data Science Bowl Cardiac Challenge Data (Kaggle, 2015, training case 233) and are shown for illustration only.' },
     about: [
       'I am a PhD researcher at the University of Manchester (AI4BioImaging), working on myocardial motion estimation and regional strain measurement from cine cardiac MRI.',
       'I studied marketing at the Macau University of Science and Technology. My undergraduate thesis was a 2×2 factorial experiment on how blockchain traceability affects willingness to buy luxury goods, and ranked in the top 5% of the business school. During that time I interned at Baidu, writing automation scripts in Python and Selenium.',
@@ -203,7 +203,7 @@ export const T = {
       research: { glyph: '乙', eyebrow: 'Research', title: '心臓の運動と局所ひずみ', projects: 'プロジェクト', details: '詳細', q: '問い', how: '方法' },
       contact: { glyph: '丙', eyebrow: 'Contact', title: '連絡先', lead: '心臓画像、ひずみ計測、医用画像AI、フルスタック開発について、お気軽にご連絡ください。', none: '連絡先は準備中です。', copy: 'アドレスをコピー', copied: 'コピーしました', copyFail: '手動で選択してコピーしてください', gmail: 'Gmailで書く', outlook: 'Outlookで書く', mail: 'メールアプリで開く', hint: 'クリックしても反応しない場合は、メールアプリが未設定の可能性があります。アドレスをコピーするか、ウェブメールからご連絡ください。', subject: 'ウェブサイトからのご連絡' },
     },
-    figure: { src: '/img/fig1-cine-to-strain.webp', alt: '通常の cine CMR から局所ひずみの主張までの流れ', caption: '図 1\u3000通常の cine CMR から局所ひずみの主張まで。画像が与えるのは観測のみで、点と点の対応は推定器が推論し、ひずみの値はさらに測定定義に左右されます。検証は、主張する内容そのものに合わせる必要があります。レビューで提案している評価の枠組みであり、実験結果ではありません。レビューは執筆中で未発表です。短軸 cine 画像は Data Science Bowl Cardiac Challenge Data（Kaggle、2015、訓練症例 233）からで、図示のみを目的としています。' },
+    figure: { src: 'img/fig1-cine-to-strain.webp', alt: '通常の cine CMR から局所ひずみの主張までの流れ', caption: '図 1\u3000通常の cine CMR から局所ひずみの主張まで。画像が与えるのは観測のみで、点と点の対応は推定器が推論し、ひずみの値はさらに測定定義に左右されます。検証は、主張する内容そのものに合わせる必要があります。レビューで提案している評価の枠組みであり、実験結果ではありません。レビューは執筆中で未発表です。短軸 cine 画像は Data Science Bowl Cardiac Challenge Data（Kaggle、2015、訓練症例 233）からで、図示のみを目的としています。' },
     about: [
       'マンチェスター大学の博士課程（AI4BioImaging）で、シネ心臓MRIからの心筋運動推定と局所ひずみ計測を研究しています。',
       '学部はマカオ科技大学でマーケティングを学びました。卒業論文はブロックチェーンによるトレーサビリティが高級品の購買意欲に与える影響を調べた2×2要因実験で、ビジネススクールの上位5%に入りました。この間、百度でインターンとして Python と Selenium の自動化スクリプトを書きました。',
