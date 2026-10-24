@@ -23,7 +23,7 @@ export const T = {
   // ───────────────────────────────────────── 中文
   zh: {
     title: '霍梓盈 Ziying Huo',
-    desc: '霍梓盈 Ziying Huo：曼彻斯特大学博士生（AI4BioImaging），研究心脏 cine MRI 的心肌运动与区域应变；伦敦全栈开发。',
+    desc: '霍梓盈 Ziying Huo：曼彻斯特大学博士生（AI4BioImaging），研究心脏 cine MRI 的心肌运动与区域应变；曾在伦敦担任全栈开发。',
     ui: {
       nav: { home: '首页', about: '关于', research: '研究', contact: '联系' },
       skip: '跳转到个人介绍',
@@ -49,7 +49,7 @@ export const T = {
     about: [
       '我在曼彻斯特大学读博士（AI4BioImaging），研究 cine 心脏磁共振的心肌运动估计与区域应变测量。',
       '本科在澳门科技大学读市场营销，毕业论文是一个 2×2 因子实验，研究区块链可追溯性如何影响奢侈品购买意愿，位列商学院前 5%。期间在百度实习，用 Python 与 Selenium 写自动化脚本。',
-      '之后我转向技术与医学影像。2024 至 2025 年在 UCL 读硕士，毕业研究用 MRI 与电子病历识别医生肉眼难以发现的早期骶髂关节炎，两条流水线各自可解释（SHAP、Grad-CAM）。2025 年起在伦敦 GoUni 做全栈开发，独立负责 Web 与 iOS 应用的架构与交付。',
+      '之后我转向技术与医学影像。2024 至 2025 年在 UCL 读硕士，毕业研究用 MRI 与电子病历识别医生肉眼难以发现的早期骶髂关节炎，两条流水线各自可解释（SHAP、Grad-CAM）。2025 至 2026 年在伦敦 GoUni 担任全栈开发，独立负责 Web 与 iOS 应用的架构与交付。',
       '2026 年起在曼彻斯特做博士。写软件让我习惯追问一个数字是怎么算出来的、换个条件还成立吗。现在我把这个问题问在应变测量上：同一段 cine，不同方法给出的区域应变能不能互相比较；连续两次扫描之间，多大的变化才算真的变化。',
     ],
     projects: [
@@ -61,7 +61,7 @@ export const T = {
     timeline: [
       { when: '2026 –', what: '曼彻斯特大学 · 博士生', where: 'Manchester',
         detail: 'Faculty of Biology, Medicine and Health，生物医学影像科学（AI4BioImaging 方向）。研究 cine 心脏磁共振的心肌运动估计与区域应变测量，从影像对应关系与测量定义，到重复性与临床解释；尤其关注区域应变在连续随访中的可重复性（最小可检出变化）。' },
-      { when: '2025 –', what: 'GoUni Ltd. · 全栈开发工程师', where: 'London · Hybrid',
+      { when: '2025 – 26', what: 'GoUni Ltd. · 全栈开发工程师', where: 'London · Hybrid',
         detail: '独立负责校园应用的整体架构与交付：React 18 网页端与 Swift/SwiftUI iOS 端采用 MVVM 与组件化设计，八个以上功能模块共享统一的 API 契约与服务层，保证双端功能一致。接入 Google Gemini（上下文角色与降级兜底），以 GitHub Actions 建立 CI/CD；三个月内交付可上线的跨国教育公司官网版本。' },
       { when: '2024 – 25', what: 'UCL · 硕士', where: 'London',
         detail: '构建了面向轴性脊柱关节炎的双模态 AI 诊断框架：分别在结构化电子病历与骶髂关节 MRI 上建立可解释模型（SHAP、Grad-CAM），并提供可概率融合的模块化代码。期间参加 RSNA 2024 腰椎退变分类竞赛。' },
@@ -102,7 +102,7 @@ export const T = {
   // ───────────────────────────────────────── English
   en: {
     title: 'Ziying Huo · 霍梓盈',
-    desc: 'Ziying Huo: PhD researcher (AI4BioImaging) at the University of Manchester working on myocardial motion and regional strain in cine cardiac MRI; full-stack developer in London.',
+    desc: 'Ziying Huo: PhD researcher (AI4BioImaging) at the University of Manchester working on myocardial motion and regional strain in cine cardiac MRI; formerly a full-stack developer in London.',
     ui: {
       nav: { home: 'Home', about: 'About', research: 'Research', contact: 'Contact' },
       skip: 'Skip to about',
@@ -128,7 +128,7 @@ export const T = {
     about: [
       'I am a PhD researcher at the University of Manchester (AI4BioImaging), working on myocardial motion estimation and regional strain measurement from cine cardiac MRI.',
       'I studied marketing at the Macau University of Science and Technology. My undergraduate thesis was a 2×2 factorial experiment on how blockchain traceability affects willingness to buy luxury goods, and ranked in the top 5% of the business school. During that time I interned at Baidu, writing automation scripts in Python and Selenium.',
-      'After that I moved into technology and medical imaging. At UCL (2024–25) my master’s thesis used MRI and electronic health records to identify early sacroiliitis that is hard to see by eye, with two separate pipelines, each explainable (SHAP, Grad-CAM). Since 2025 I have worked as a full-stack developer at GoUni in London, responsible for the architecture and delivery of web and iOS applications.',
+      'After that I moved into technology and medical imaging. At UCL (2024–25) my master’s thesis used MRI and electronic health records to identify early sacroiliitis that is hard to see by eye, with two separate pipelines, each explainable (SHAP, Grad-CAM). From 2025 to 2026 I worked as a full-stack developer at GoUni in London, responsible for the architecture and delivery of web and iOS applications.',
       'I started the PhD in Manchester in 2026. Writing software left me in the habit of asking how a number was computed and whether it still holds under different conditions. I now ask that of strain measurement: can regional strain from different methods on the same cine be compared, and how large does a change between two consecutive scans have to be before it counts as real.',
     ],
     projects: [
@@ -140,7 +140,7 @@ export const T = {
     timeline: [
       { when: '2026 –', what: 'University of Manchester · PhD', where: 'Manchester',
         detail: 'Faculty of Biology, Medicine and Health; Biomedical Imaging Sciences (AI4BioImaging). Myocardial motion estimation and regional strain measurement from cine cardiac MRI, from image correspondence and measurement definitions to repeatability and clinical interpretation. A particular focus is the repeatability of regional strain in serial follow-up (minimal detectable change).' },
-      { when: '2025 –', what: 'GoUni Ltd. · Full-stack Developer', where: 'London · Hybrid',
+      { when: '2025 – 26', what: 'GoUni Ltd. · Full-stack Developer', where: 'London · Hybrid',
         detail: 'Sole owner of the architecture and delivery of a campus application: a React 18 web client and a Swift/SwiftUI iOS client built with MVVM and component-based design, sharing one API contract and service layer across eight-plus modules to keep the platforms at feature parity. Integrated Google Gemini with context-aware personas and fallback handling, set up CI/CD on GitHub Actions, and delivered a production-ready official website for a multinational education company within three months.' },
       { when: '2024 – 25', what: 'UCL · Master’s', where: 'London',
         detail: 'Built a dual-modality AI diagnostic framework for axial spondyloarthritis, with interpretable models on structured health records and on sacroiliac joint MRI (SHAP, Grad-CAM) and modular code for probabilistic fusion. Also took part in the RSNA 2024 lumbar spine degenerative classification challenge.' },
@@ -181,7 +181,7 @@ export const T = {
   // ───────────────────────────────────────── 日本語
   ja: {
     title: '霍梓盈 Ziying Huo',
-    desc: '霍梓盈（Ziying Huo）：マンチェスター大学 博士課程（AI4BioImaging）。シネ心臓MRIの心筋運動と局所ひずみを研究。ロンドンでフルスタック開発。',
+    desc: '霍梓盈（Ziying Huo）：マンチェスター大学 博士課程（AI4BioImaging）。シネ心臓MRIの心筋運動と局所ひずみを研究。以前はロンドンでフルスタック開発を担当。',
     ui: {
       nav: { home: 'ホーム', about: '概要', research: '研究', contact: '連絡' },
       skip: '自己紹介へ移動',
@@ -207,7 +207,7 @@ export const T = {
     about: [
       'マンチェスター大学の博士課程（AI4BioImaging）で、シネ心臓MRIからの心筋運動推定と局所ひずみ計測を研究しています。',
       '学部はマカオ科技大学でマーケティングを学びました。卒業論文はブロックチェーンによるトレーサビリティが高級品の購買意欲に与える影響を調べた2×2要因実験で、ビジネススクールの上位5%に入りました。この間、百度でインターンとして Python と Selenium の自動化スクリプトを書きました。',
-      'その後、技術と医用画像へ進みました。2024〜25年のUCL修士では、MRIと電子カルテを用いて、目視では見分けにくい早期の仙腸関節炎を識別する研究を行い、2つのパイプラインはそれぞれ説明可能です（SHAP、Grad-CAM）。2025年からはロンドンのGoUniでフルスタック開発エンジニアとして、WebおよびiOSアプリの設計と提供を担当しています。',
+      'その後、技術と医用画像へ進みました。2024〜25年のUCL修士では、MRIと電子カルテを用いて、目視では見分けにくい早期の仙腸関節炎を識別する研究を行い、2つのパイプラインはそれぞれ説明可能です（SHAP、Grad-CAM）。2025〜26年はロンドンのGoUniでフルスタック開発エンジニアとして、WebおよびiOSアプリの設計と提供を担当しました。',
       '2026年からマンチェスターで博士課程に在籍しています。ソフトウェアを書く中で、数字がどう計算されたのか、条件を変えても成り立つのかを確かめる習慣がつきました。いまはその問いをひずみ計測に向けています。同じシネ画像から異なる手法で得た局所ひずみは比較できるのか、連続する2回の撮像のあいだで、どれだけの変化なら本当の変化といえるのか。',
     ],
     projects: [
@@ -219,7 +219,7 @@ export const T = {
     timeline: [
       { when: '2026 –', what: 'マンチェスター大学 · 博士課程', where: 'Manchester',
         detail: 'Faculty of Biology, Medicine and Health、生物医学イメージング科学（AI4BioImaging）。シネ心臓MRIによる心筋運動推定と局所ひずみ計測を、画像の対応関係や計測の定義から、再現性と臨床的解釈まで扱います。とくに局所ひずみの経時フォローアップにおける再現性（最小検出可能変化）に注目しています。' },
-      { when: '2025 –', what: 'GoUni Ltd. · フルスタック開発エンジニア', where: 'London · ハイブリッド',
+      { when: '2025 – 26', what: 'GoUni Ltd. · フルスタック開発エンジニア', where: 'London · ハイブリッド',
         detail: 'キャンパス向けアプリ全体の設計と納品を単独で担当。React 18 のWeb版とSwift/SwiftUIのiOS版をMVVMとコンポーネント設計で構築し、8つ以上の機能モジュールで共通のAPI契約とサービス層を共有して、両プラットフォームの機能を揃えました。Google Geminiをコンテキスト対応のペルソナとフォールバック付きで統合し、GitHub ActionsでCI/CDを構築。3か月で、多国籍教育企業向け公式サイトの本番稼働可能なバージョンを納品しました。' },
       { when: '2024 – 25', what: 'UCL · 修士課程', where: 'London',
         detail: '体軸性脊椎関節炎に対する二モダリティAI診断フレームワークを構築。構造化電子カルテと仙腸関節MRIそれぞれで説明可能なモデル（SHAP、Grad-CAM）を作成し、確率的に統合できるモジュール式コードを用意しました。期間中、RSNA 2024の腰椎変性分類コンペにも参加しました。' },

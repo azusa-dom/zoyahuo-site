@@ -80,8 +80,8 @@ const card = toLines(`// ${P.name.toLowerCase().replace(' ', '-')}.js
 const me = {
   name: '${P.name}',
   zh: '${P.nameZh}',
-  now: ['University of Manchester · PhD (AI4BioImaging)', 'GoUni · full-stack'],
-  before: ['UCL · Master\\'s', 'Baidu · Beijing'],
+  now: ['University of Manchester · PhD (AI4BioImaging)'],
+  before: ['GoUni · full-stack', 'UCL · Master\\'s', 'Baidu · Beijing'],
   faculty: 'Biology, Medicine and Health',
 }
 
@@ -97,9 +97,6 @@ ${P.pipeline.map((p) => `  '${p}',`).join('\n')}
 const F = (u) => I + grad(u)              // F = I + ∇u
 const E = (F) => 0.5 * (F.T @ F - I)      // Green-Lagrange
 const strain = (u) => project(E(F(u)), radial, circumferential, longitudinal)
-
-// 质控：过不了就不往下游送
-const trust = (field) => !folds(field) && closesLoop(field) && dice(field) > 0.85
 `)
 createCodeTicker($('#code'), { lines: card, cps: 40 })
 
