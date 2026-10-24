@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 20
       - name: Install esbuild (build.mjs reads it from ~/.cache/zoya-site-build)
-        run: npm install --prefix "$HOME/.cache/zoya-site-build" esbuild
+        run: npm install --prefix "$HOME/.cache/zoya-site-build" esbuild@0.28.2
       - run: node tools/build.mjs
       - uses: actions/upload-pages-artifact@v3
         with:

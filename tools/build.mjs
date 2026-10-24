@@ -45,15 +45,16 @@ const css = await esbuild.build({
   stdin: { contents: '@import "./vendor/fonts/fonts.css";\n@import "./src/style.css";', resolveDir: root, loader: 'css' },
   outfile: path.join(dist, 'assets/style.css'),
   bundle: true, minify: true, loader: { '.woff2': 'file' },
-  assetNames: 'fonts/[name]-[hash]', publicPath: '/assets', logLevel: 'warning',
+  assetNames: 'fonts/[name]-[hash]', publicPath: './assets', logLevel: 'warning',
 })
 const cssPath = path.join(dist, 'assets/style.css')
 const cssText = fs.readFileSync(cssPath, 'utf8')
 fs.rmSync(cssPath)
 
 // 三、HTML：CSS 内联，去掉 importmap，脚本指向哈希文件，字环块提前 preload
+// 路径一律写成相对的（./assets/…），站点放在域名根目录或 GitHub Pages 的 /<仓库名>/ 子路径下都能用
 let html = fs.readFileSync(path.join(root, 'index.html'), 'utf8')
-const rel = (f) => '/' + path.relative(dist, path.resolve(root, f)).replaceAll(path.sep, '/')
+const rel = (f) => './' + path.relative(dist, path.resolve(root, f)).replaceAll(path.sep, '/')
 html = html
   .replace(/<link rel="stylesheet" href="\.\/vendor\/fonts\/fonts\.css" \/>\n?/, '')
   .replace(/<link rel="stylesheet" href="\.\/src\/style\.css" \/>/, `<style>${cssText}</style>`)
