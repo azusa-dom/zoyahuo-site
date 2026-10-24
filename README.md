@@ -44,6 +44,7 @@ python3 -m http.server 8000
 直接在 GitHub 网页上改 `src/profile.js` 并提交到 `main` 也会触发发布。
 
 自定义域名在仓库 Settings → Pages → Custom domain 里设置（用 Actions 发布时以这里为准，`dist/CNAME` 只是留档），并勾选 Enforce HTTPS。
+如果打开 `https://zoyahuo.space` 报证书错误（浏览器显示证书属于 `*.github.io`），说明 GitHub 还没给这个域名签发证书：在 Settings → Pages 里把 Custom domain 删掉并保存，再重新填 `zoyahuo.space`，等 DNS check 通过、证书签发（可能要几十分钟到一天）后再勾选 Enforce HTTPS。
 域名解析在 DNSPod：根域名 `@` 建议配齐 GitHub Pages 的四条 A 记录 `185.199.108.153`、`185.199.109.153`、`185.199.110.153`、`185.199.111.153`，`www` 加一条 CNAME 指向 `azusa-dom.github.io`。
 
 如果域名不再续费：在 Settings → Pages 里清空 Custom domain，再删掉 `tools/build.mjs` 里写 `dist/CNAME` 的那一行，站点会回到 <https://azusa-dom.github.io/zoyahuo-site/>。
