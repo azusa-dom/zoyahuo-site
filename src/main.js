@@ -160,7 +160,7 @@ function renderLang() {
   $('#research-eyebrow').textContent = pg.research.eyebrow
   $('#research-title').textContent = pg.research.title
   $('#research-figure').innerHTML = t.figure
-    ? `<figure><a href="${esc(t.figure.src)}" target="_blank" rel="noopener"><img src="${esc(t.figure.src)}" alt="${esc(t.figure.alt)}" width="2400" height="1451" loading="lazy" decoding="async"></a><figcaption>${esc(t.figure.caption)}</figcaption></figure>`
+    ? `<figure><a href="${esc(t.figure.src)}" target="_blank" rel="noopener"><img src="${esc(t.figure.src)}" alt="${esc(t.figure.alt)}" width="${t.figure.w}" height="${t.figure.h}" loading="lazy" decoding="async"></a><figcaption>${esc(t.figure.caption)}</figcaption></figure>`
     : ''
   const rp = pg.research
   $('#sub-projects').textContent = rp.projects
