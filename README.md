@@ -1,4 +1,4 @@
-# 霍梓盈 · 个人周天
+# Zoya Huo · 个人周天
 
 版式来自 Codex 做的「个人周天」（`~/Downloads/tianzhi`），字环用 [zaoxu001/celestial-wheel](https://github.com/zaoxu001/celestial-wheel) 的**原版**（MIT），没有改动。
 
