@@ -3,8 +3,8 @@
 // links 里留空字符串的项不会显示。
 
 export const PROFILE = {
-  name: 'Ziying Huo',
-  nameZh: '霍梓盈',
+  name: 'Zoya Huo',
+  mega: 'Zoya',     // 首页背景的超大半透明字
   seal: '霍',
   location: 'Manchester / London, UK',
   pipeline: ['cine CMR', 'motion estimation', 'myocardial strain', 'clinical application'],
@@ -22,12 +22,12 @@ export const HTML_LANG = { zh: 'zh-CN', en: 'en', ja: 'ja' }
 export const T = {
   // ───────────────────────────────────────── 中文
   zh: {
-    title: '霍梓盈 Ziying Huo',
-    desc: '霍梓盈 Ziying Huo：曼彻斯特大学博士生（AI4BioImaging），研究心脏 cine MRI 的心肌运动与区域应变；曾在伦敦担任全栈开发。',
+    title: 'Zoya Huo',
+    desc: 'Zoya Huo：曼彻斯特大学博士生（AI4BioImaging），研究心脏 cine MRI 的心肌运动与区域应变；曾在伦敦担任全栈开发。',
     ui: {
       nav: { home: '首页', about: '关于', research: '研究', contact: '联系' },
       skip: '跳转到个人介绍',
-      greeting: '你好，我是霍梓盈。',
+      greeting: '你好，我是 Zoya Huo。',
       slogan: ['写代码，', '也读心脏'],
       lead: ['曼彻斯特大学博士生（AI4BioImaging），', '研究心脏 cine MRI 的运动与应变；', '曾在伦敦担任全栈开发。'],
       primary: '看我的研究', quiet: '关于我',
@@ -101,12 +101,12 @@ export const T = {
 
   // ───────────────────────────────────────── English
   en: {
-    title: 'Ziying Huo · 霍梓盈',
-    desc: 'Ziying Huo: PhD researcher (AI4BioImaging) at the University of Manchester working on myocardial motion and regional strain in cine cardiac MRI; formerly a full-stack developer in London.',
+    title: 'Zoya Huo',
+    desc: 'Zoya Huo: PhD researcher (AI4BioImaging) at the University of Manchester working on myocardial motion and regional strain in cine cardiac MRI; formerly a full-stack developer in London.',
     ui: {
       nav: { home: 'Home', about: 'About', research: 'Research', contact: 'Contact' },
       skip: 'Skip to about',
-      greeting: 'Hello, I’m Ziying Huo.',
+      greeting: 'Hello, I’m Zoya Huo.',
       slogan: ['Writing code,', 'reading hearts'],
       lead: ['PhD researcher (AI4BioImaging) at the University of Manchester,', 'working on motion and strain in cardiac cine MRI;', 'formerly a full-stack developer in London.'],
       primary: 'See my research', quiet: 'About me',
@@ -180,12 +180,12 @@ export const T = {
 
   // ───────────────────────────────────────── 日本語
   ja: {
-    title: '霍梓盈 Ziying Huo',
-    desc: '霍梓盈（Ziying Huo）：マンチェスター大学 博士課程（AI4BioImaging）。シネ心臓MRIの心筋運動と局所ひずみを研究。以前はロンドンでフルスタック開発を担当。',
+    title: 'Zoya Huo',
+    desc: 'Zoya Huo：マンチェスター大学 博士課程（AI4BioImaging）。シネ心臓MRIの心筋運動と局所ひずみを研究。以前はロンドンでフルスタック開発を担当。',
     ui: {
       nav: { home: 'ホーム', about: '概要', research: '研究', contact: '連絡' },
       skip: '自己紹介へ移動',
-      greeting: 'こんにちは、霍梓盈です。',
+      greeting: 'こんにちは、Zoya Huo です。',
       slogan: ['コードを書き、', '心臓を読む'],
       lead: ['マンチェスター大学 博士課程（AI4BioImaging）。', 'シネ心臓MRIにおける心筋の運動とひずみを研究しています。', 'ロンドンではフルスタック開発を担当していました。'],
       primary: '研究を見る', quiet: '自己紹介',

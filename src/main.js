@@ -79,7 +79,6 @@ $('#explore-dialog').addEventListener('click', (e) => {
 const card = toLines(`// ${P.name.toLowerCase().replace(' ', '-')}.js
 const me = {
   name: '${P.name}',
-  zh: '${P.nameZh}',
   now: ['University of Manchester · PhD (AI4BioImaging)'],
   before: ['GoUni · full-stack', 'UCL · Master\\'s', 'Baidu · Beijing'],
   faculty: 'Biology, Medicine and Health',
@@ -112,7 +111,7 @@ function renderLang() {
   $('#skip').textContent = u.skip
   $('#seal').textContent = P.seal
   $('#brand-name').textContent = P.name
-  $('#mega-zh').textContent = P.nameZh
+  $('#mega-zh').textContent = P.mega
   $('#now').innerHTML = `${esc(gz.year)}年 · <b>${esc(gz.day)}日</b>`
 
   $('#nav').innerHTML = ORDER.map((r) => `<a href="${HREF[r]}" data-route="${r}">${esc(u.nav[r])}${r === 'contact' ? ' <span>↗</span>' : ''}</a>`).join('')
@@ -265,7 +264,7 @@ function applyRoute() {
     on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')
   })
   const t = T[lang]
-  document.title = route === 'home' ? t.title : `${t.ui.nav[route]} · ${P.nameZh}`
+  document.title = route === 'home' ? t.title : `${t.ui.nav[route]} · ${P.name}`
 }
 
 function show() {
