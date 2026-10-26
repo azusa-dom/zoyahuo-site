@@ -47,10 +47,8 @@ export const T = {
     },
     figure: { src: 'img/fig1-measurement-chain-20261025.webp', w: 2000, h: 2239, alt: '从常规 cine 图像到区域主张的测量链，以及各类验证目标对应的环节', caption: '图 1　从常规 cine 图像到区域主张，以及验证证据落在哪一环。(a) 测量链：cine 显示清晰的血池–心肌边界，但心肌内部对比很弱，壁内的点对应只能推断；轮廓完全相同（Dice 1、Hausdorff 距离 0）的两种映射可以给出不同的周向伸长，应变值再取决于所声明的定义。(b) 每类验证目标检验链上的哪些环节；在综述涉及的研究中，直接检验局灶属性的很少。示意图：标记位置表达的是综述的论证，不是研究数量或效应量；图中节号指综述正文。cine 帧取自 Stanford Cardiac Performance MRI 公开数据库中的一名健康志愿者（Open Database License v1.0），其余为解析或示意图形。综述 2026 年 10 月定稿，尚未发表。' },
     about: [
-      '我在曼彻斯特大学读博士（AI4BioImaging），研究 cine 心脏磁共振的心肌运动估计与区域应变测量。',
-      '本科在澳门科技大学读商业数据分析，毕业论文是一个 2×2 因子实验，研究区块链可追溯性如何影响奢侈品购买意愿，位列商学院前 5%。期间在百度实习，用 Python 与 Selenium 写自动化脚本。',
-      '之后我转向技术与医学影像。2024 至 2025 年在 UCL 读硕士，毕业研究用 MRI 与电子病历识别医生肉眼难以发现的早期骶髂关节炎，两条流水线各自可解释（SHAP、Grad-CAM）。2025 至 2026 年在伦敦 GoUni 担任全栈开发，独立负责 Web 与 iOS 应用的架构与交付。',
-      '2026 年起在曼彻斯特做博士。写软件让我习惯追问一个数字是怎么算出来的、换个条件还成立吗。现在我把这个问题问在应变测量上：同一段 cine，不同方法给出的区域应变能不能互相比较；连续两次扫描之间，多大的变化才算真的变化。',
+      '我在曼彻斯特大学读博士（AI4BioImaging），研究 cine 心脏磁共振的心肌运动估计与区域应变测量。目前在写一篇综述，梳理常规 cine 对区域应变究竟能支持哪些结论。',
+      '本科读商业数据分析，在 UCL 读硕士时转向医学影像 AI，之后做过全栈开发。写软件让我习惯追问一个数字是怎么算出来的、换个条件还成立吗，现在我把这个问题问在应变测量上。',
     ],
     projects: [
       { status: '已定稿', title: '综述：从常规 cine 到区域心肌功能异常', en: 'From routine cine CMR to regional myocardial dysfunction', q: '区域异常的哪些属性（幅度、位置、范围、时序），已被证明能从常规 cine 测得足够准确，可用于特定用途？', how: '从影像输入、人群与异常、估计对象、应变定义与汇总、验证目标、报告的误差或关联六个维度比较研究，不做合并估计。2026 年 10 月定稿，尚未发表。' },
@@ -128,10 +126,8 @@ export const T = {
     },
     figure: { src: 'img/fig1-measurement-chain-20261025.webp', w: 2000, h: 2239, alt: 'The measurement chain from routine cine images to a regional claim, and the links each validation target tests', caption: 'Figure 1. From routine cine images to a regional claim, and where validation evidence attaches. (a) The measurement chain: cine shows sharp blood–myocardium edges but little contrast inside the wall, so correspondence inside the wall is inferred; two mappings with identical contours (Dice 1, Hausdorff distance 0) imply different circumferential stretch, and strain then follows under the stated definition. (b) The links of the chain that each validation target tests; among the studies reviewed, direct tests of the focal attribute were rarely reported. Schematic: marker positions encode the argument of the review, not study counts or effect sizes; section numbers refer to the review. Cine frames are from one healthy volunteer in the public Stanford Cardiac Performance MRI repository (Open Database License v1.0); the other graphics are analytic or illustrative. Final draft October 2026; not yet published.' },
     about: [
-      'I am a PhD researcher at the University of Manchester (AI4BioImaging), working on myocardial motion estimation and regional strain measurement from cine cardiac MRI.',
-      'I studied business data analytics at the Macau University of Science and Technology. My undergraduate thesis was a 2×2 factorial experiment on how blockchain traceability affects willingness to buy luxury goods, and ranked in the top 5% of the business school. During that time I interned at Baidu, writing automation scripts in Python and Selenium.',
-      'After that I moved into technology and medical imaging. At UCL (2024–25) my master’s thesis used MRI and electronic health records to identify early sacroiliitis that is hard to see by eye, with two separate pipelines, each explainable (SHAP, Grad-CAM). From 2025 to 2026 I worked as a full-stack developer at GoUni in London, responsible for the architecture and delivery of web and iOS applications.',
-      'I started the PhD in Manchester in 2026. Writing software left me in the habit of asking how a number was computed and whether it still holds under different conditions. I now ask that of strain measurement: can regional strain from different methods on the same cine be compared, and how large does a change between two consecutive scans have to be before it counts as real.',
+      'I am a PhD researcher at the University of Manchester (AI4BioImaging), working on myocardial motion estimation and regional strain from cine cardiac MRI. I am currently writing a review of what routine cine can and cannot support about regional strain.',
+      'I studied business data analytics, moved into medical imaging AI during my MSc at UCL, and then worked as a full-stack developer. Writing software taught me to ask how a number was computed and whether it still holds under other conditions; I now ask that of strain measurement.',
     ],
     projects: [
       { status: 'Final draft', title: 'Critical narrative review', en: 'From routine cine CMR to regional myocardial dysfunction', q: 'Which attributes of a regional abnormality (magnitude, location, extent, timing) have been shown to be measured from routine cine accurately enough for an intended use?', how: 'Studies compared along six axes: image input, population and abnormality, estimated entity, strain definition and aggregation, validation target, and reported error or association; no pooled estimate. Final draft October 2026; unpublished.' },
@@ -209,10 +205,8 @@ export const T = {
     },
     figure: { src: 'img/fig1-measurement-chain-20261025.webp', w: 2000, h: 2239, alt: '通常のシネ画像から局所の主張までの計測の連鎖と、各検証対象が確かめる段階', caption: '図 1　通常のシネ画像から局所の主張まで、そして検証の根拠がどこに結びつくか。(a) 計測の連鎖：シネは血液と心筋の境界を鮮明に示しますが、壁内のコントラストは乏しく、壁内の対応は推定になります。輪郭が完全に一致する（Dice 1、Hausdorff 距離 0）2つの写像でも円周方向の伸びは異なり、ひずみは宣言した定義に従って求まります。(b) 各検証対象が連鎖のどの段階を検証するか。レビューで扱った研究では、局所の属性を直接検証した報告はまれでした。模式図であり、マーカーの位置はレビューの論旨を表し、研究数や効果量ではありません。図中の節番号はレビュー本文を指します。シネ画像は公開データベース Stanford Cardiac Performance MRI の健常ボランティア1名のもの（Open Database License v1.0）で、その他は解析的または説明用の図形です。レビューは2026年10月に最終稿となり、未発表です。' },
     about: [
-      'マンチェスター大学の博士課程（AI4BioImaging）で、シネ心臓MRIからの心筋運動推定と局所ひずみ計測を研究しています。',
-      '学部はマカオ科技大学でビジネスデータ分析を学びました。卒業論文はブロックチェーンによるトレーサビリティが高級品の購買意欲に与える影響を調べた2×2要因実験で、ビジネススクールの上位5%に入りました。この間、百度でインターンとして Python と Selenium の自動化スクリプトを書きました。',
-      'その後、技術と医用画像へ進みました。2024〜25年のUCL修士では、MRIと電子カルテを用いて、目視では見分けにくい早期の仙腸関節炎を識別する研究を行い、2つのパイプラインはそれぞれ説明可能です（SHAP、Grad-CAM）。2025〜26年はロンドンのGoUniでフルスタック開発エンジニアとして、WebおよびiOSアプリの設計と提供を担当しました。',
-      '2026年からマンチェスターで博士課程に在籍しています。ソフトウェアを書く中で、数字がどう計算されたのか、条件を変えても成り立つのかを確かめる習慣がつきました。いまはその問いをひずみ計測に向けています。同じシネ画像から異なる手法で得た局所ひずみは比較できるのか、連続する2回の撮像のあいだで、どれだけの変化なら本当の変化といえるのか。',
+      'マンチェスター大学の博士課程（AI4BioImaging）で、シネ心臓MRIからの心筋運動推定と局所ひずみ計測を研究しています。いまは、通常のシネで局所ひずみについて何が言えるのかを整理するレビューを書いています。',
+      '学部ではビジネスデータ分析を学び、UCLの修士課程で医用画像AIに移り、その後フルスタック開発に携わりました。ソフトウェアを書く中で、数字がどう計算され、条件を変えても成り立つのかを問う習慣がつき、いまはその問いをひずみ計測に向けています。',
     ],
     projects: [
       { status: '最終稿', title: '批判的ナラティブレビュー', en: 'From routine cine CMR to regional myocardial dysfunction', q: '局所異常のどの属性（大きさ・位置・範囲・時間経過）が、通常のシネから用途に足る精度で測れると示されているか。', how: '画像入力、対象集団と異常、推定対象、ひずみの定義と集約、検証の対象、報告された誤差や関連の6軸で研究を比較し、統合推定は行いません。2026年10月に最終稿となり、未発表です。' },
